@@ -8,7 +8,7 @@ Requirements
 ------------
 
 For access to Notificore API:
-- [Sign up](https://app.notificore.com) for a free account
+- [Sign up](https://app.notificore.ru) for a free account
 - Get `api_key`
 - Python 3.2+, [requests](https://pypi.python.org/pypi/requests)
 
@@ -23,7 +23,7 @@ Installation
 
 Usage
 -----
-See [Notificore REST API Documentation](https://app.notificore.com/developers/rest-api/) for complete list of API clients, error codes, result codes etc.
+See [Notificore REST API Documentation](https://app.notificore.ru/developers/rest-api/) for complete list of API clients, error codes, result codes etc.
 
 An short example of a SMS API usage:
 ```python
@@ -53,7 +53,7 @@ prices = client.get_prices()
 print('HLR Prices (first 5 elements from {}): \n{}'.format(len(prices), pprint.pformat(prices[0:5], indent=4)))
 
 # Get HLR for single smisdn:
-lookup_list = api.HLRL(380970000000)
+lookup_list = api.HLRL(971500000000)
 print('Created HLR request: \n{}'.format(pprint.pformat(lookup_list, indent=4)))
 # Send the request
 result = client.send(lookup_list)
